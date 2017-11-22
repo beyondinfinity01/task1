@@ -1,0 +1,273 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+      <style>
+        .fbblue {
+            background-color:#4267b2;
+
+        }
+
+    </style>
+
+
+
+    <script type="text/javascript">
+      
+       $(document).ready(function(){
+            $(".checklogin").click(function(){
+               
+
+                var email = $(".uemail").val();
+                var pass = $(".upassword").val();
+
+
+                    if(email==""||pass==""){
+
+                        var errors="";
+
+                        errors+="Please fill up the fields";
+
+                      var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                       if(regex.test(email)){
+                       
+
+                           errors+="Badly formatted emailid";
+
+                        }
+
+                      alert(errors);
+                    }
+                    else{
+
+
+                    if(email==='saj@saj.com' & pass==='sajan'){
+
+                      alert('done');
+                      window.location.href = 'home.html';
+
+                    }
+                    else{
+                      alert('incorrect uname or pass');
+                    }
+
+                      
+                      // var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                      //  if(regex.test(email)){
+                       
+
+                      //      alert(email);
+
+                      //      }
+
+
+
+                      //  }
+                      //  else{
+
+                      //   alert("badly formatted email");
+                      //  }
+
+
+
+                    }
+
+
+
+
+    
+    
+
+
+
+
+            });
+
+
+
+// this for the mobile view 
+              $(".checklogin2").click(function(){
+               
+
+                var email = $(".uemail2").val();
+                var pass = $(".upassword2").val();
+
+
+                    if(email==""||pass==""){
+
+                        var errors="";
+
+                        errors+="Please fill up the fields";
+
+                      var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                       if(regex.test(email)){
+                       
+
+                           errors+="Badly formatted emailid";
+
+                        }
+
+                      alert(errors);
+                    }
+                    else{
+
+
+                    if(email==='saj@saj.com' & pass==='sajan'){
+
+                      alert('done');
+                      window.location.href = 'home.html';
+
+                    }
+                    else{
+                      alert('incorrect uname or pass');
+                    }
+
+                      
+                      // var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                      //  if(regex.test(email)){
+                       
+
+                      //      alert(email);
+
+                      //      }
+
+
+
+                      //  }
+                      //  else{
+
+                      //   alert("badly formatted email");
+                      //  }
+
+
+
+                    }
+
+
+
+
+    
+    
+
+
+
+
+            });
+        });
+    </script>
+    
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+     
+
+
+
+  <nav class="fbblue" style="height:129px;">
+    <div class="nav-wrapper">
+      <div class="container">
+      <a href="#" class="brand-logo hide-on-med-only">Login</a>
+    </div>
+      <ul id="nav-mobile" class="right hide-on-small-only">
+
+         <div class="row " style="padding-right:55px;">
+
+             <li><span> E-mail or phone</span><input  type="email" required class="uemail validate black-text" style="background-color:white;height:28px;"> </li>
+              <li ><span> Password</span>  <input  type="password" required class="upassword validate black-text" style="background-color:white;margin-left:13px;height:28px;"> </li>
+          <li ><br><button id="" class="btn blue darken-4 checklogin" style="margin-left:23px;height:28px;">Login </button></li>
+      
+          </div>
+       
+      </ul>
+    </div>
+  </nav>
+
+ <!--  <section>
+                <div class="row">
+
+
+
+                  <div class="col s12 l6 m12 push-l6 ">
+
+
+                      <div class="row">
+
+                        <h3 class="center">Login to this</h3>
+
+                        <div class="row">
+                              <div class="col s12">
+                                <div class="row">
+                                 
+                                   <div class="row">
+                                  <div class="input-field col s12">
+                                    <input id="uemail" type="email" required class="validate">
+                                    <label for="uemail">Email</label>
+                                  </div>
+                                </div>
+                                </div>
+                               
+                                <div class="row">
+                                  <div class="input-field col s12">
+                                    <input id="upassword" type="password" required class="validate">
+                                    <label for="upassword">Password</label>
+                                  </div>
+                                </div>
+                               
+                              <div class="row container">
+
+                                <input type="submit" id="checklogin" name="Login" class=" btn teal" value="LOgin to this">
+
+                              </div>
+                            </div>
+                        
+                            </div>
+
+                      </div>
+                </div>
+  </section>  -->  
+
+
+
+
+<div class="hide-on-med-and-up">
+  
+          <div class="row container">
+
+             <div class="card">
+
+                 <div class="input-field col s12">
+              <input type="email" required class="uemail2 validate" placeholder="Input email"> 
+            </div>
+               <div class="input-field col s12">
+                <input  type="password" required class="upassword2 validate" placeholder="Input password"> 
+              </div>
+
+              <div class="input-field col s12">
+
+                <button   class="white-text btn blue darken-4 checklogin2">Log in</button>
+              </div>
+
+
+             </div>
+
+
+          </div>
+
+</div>
+
+
+
+    </body>
+  </html>
